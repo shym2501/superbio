@@ -76,7 +76,6 @@ Feel free to contribute to this project by submitting a pull request.
 # Credits
 I'd like to thank all the people who have contributed to the packages used in this project. 
 Especially [Spatie](https://spatie.be) for their great packages, Livewire and Alpinejs for their awesome framework and the Laravel community for their great work.
-Furthermore, the [Tallstack.dev](https://tallstack.dev) team for their preset.
 And of course [Laravel](https://laravel.com) for their awesome framework.
 
 # Donate
