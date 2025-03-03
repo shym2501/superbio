@@ -69,6 +69,11 @@ php artisan migrate
 ```bash
 php artisan db:seed
 ```
+## 5. Creating the first Super Admin user
+
+```bash
+php artisan app:create-super-admin
+```
 
 # Contributing
 Feel free to contribute to this project by submitting a pull request.
