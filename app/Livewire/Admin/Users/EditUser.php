@@ -4,15 +4,18 @@ namespace App\Livewire\Admin\Users;
 
 use App\Models\User;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Arr;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
+use Livewire\Features\SupportRedirects\HandlesRedirects;
 use Spatie\Permission\Models\Role;
 
 class EditUser extends Component
 {
+    use HandlesRedirects;
     use LivewireAlert;
 
     public User $user;
@@ -35,11 +38,10 @@ class EditUser extends Component
         $this->email = $this->user->email;
 
         // get user roles
-        $this->userRoles = $this->user->roles->pluck('id')->toArray() ?? [];
-
+        $this->userRoles = $this->user->roles->pluck('id')->toArray();
     }
 
-    public function updateUser()
+    public function updateUser(): RedirectResponse
     {
         $this->authorize('update users');
 
@@ -51,7 +53,7 @@ class EditUser extends Component
         ]);
 
         // Convert the userRoles to integers
-        $userRoles = Arr::map($this->userRoles, fn ($role) => (int) $role);
+        $userRoles = Arr::map($this->userRoles, fn ($role): int => (int) $role);
 
         // Sync the user roles
         $this->user->syncRoles($userRoles);

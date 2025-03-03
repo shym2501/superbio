@@ -14,8 +14,8 @@ use Spatie\Permission\Models\Role;
 
 class Users extends Component
 {
-    use WithPagination;
     use LivewireAlert;
+    use WithPagination;
 
     /** @var array<string,string> */
     protected $listeners = [

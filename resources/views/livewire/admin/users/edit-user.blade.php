@@ -14,8 +14,6 @@
             @endforeach
         </flux:checkbox.group>
 
-        @dump($userRoles)
-
         <flux:button type="submit" icon="save" variant="primary">
             Save User
         </flux:button>

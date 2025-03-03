@@ -43,7 +43,6 @@ class Password extends Component
         $this->dispatch('password-updated');
     }
 
-
     #[Layout('components.layouts.app.frontend')]
     public function render(): View
     {

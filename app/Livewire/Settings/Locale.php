@@ -8,7 +8,6 @@ use Livewire\Component;
 
 class Locale extends Component
 {
-
     public string $locale = '';
 
     public function mount(): void
@@ -16,7 +15,7 @@ class Locale extends Component
         $this->locale = auth()->user()->locale;
     }
 
-    public function updateLocale()
+    public function updateLocale(): void
     {
         $this->validate([
             'locale' => 'required|string|in:en,da',
@@ -25,7 +24,6 @@ class Locale extends Component
         auth()->user()->update([
             'locale' => $this->locale,
         ]);
-
 
         $this->dispatch('locale-updated', name: auth()->user()->name);
     }

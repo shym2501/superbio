@@ -8,7 +8,6 @@ use Livewire\Component;
 
 class Appearance extends Component
 {
-
     #[Layout('components.layouts.app.frontend')]
     public function render(): View
     {
