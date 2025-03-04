@@ -14,6 +14,8 @@ class PermissionSeeder extends Seeder
     {
         $permissions = [
 
+            'access dashboard',
+
             'impersonate',
 
             'view users',
