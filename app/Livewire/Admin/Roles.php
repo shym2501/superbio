@@ -49,6 +49,7 @@ class Roles extends Component
     {
         return view('livewire.admin.roles', [
             'roles' => Role::query()
+                ->with('permissions')
                 ->when($this->search, function ($query, $search): void {
                     $query->whereAny($this->searchableFields, 'LIKE', "%$search%");
                 })

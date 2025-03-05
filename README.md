@@ -28,9 +28,10 @@ It comes with a basic user management, role management and permissions managemen
 - [missing-livewire-assertions](https://github.com/christophrumpel/missing-livewire-assertions) for extra testing of Livewire components by [Christoph Rumpel](https://github.com/christophrumpel)
 - [LivewireAlerts](https://github.com/jantinnerezo/livewire-alert) for SweetAlerts
 - [Spatie Roles & Permissions](https://spatie.be/docs/laravel-permission/v5/introduction) for user roles and permissions
-
-### Upcoming features
 - [Strict Eloquent Models](https://planetscale.com/blog/laravels-safety-mechanisms) for safety
+- 
+### Upcoming features
+
 - [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) for debugging
 - [Laravel IDE helper](https://github.com/barryvdh/laravel-ide-helper) for IDE support
 - [Wire Elements / Modals](https://github.com/wire-elements/modal) for modals (still deciding)
@@ -75,13 +76,40 @@ php artisan db:seed
 php artisan app:create-super-admin
 ```
 
+## 6. Set default timezone if different from UTC
+
+```php
+// config/app.php
+return [
+    // ...
+    
+    'timezone' => 'Europe/Copenhagen' // Default: UTC
+    
+    // ...
+];
+```
+
+# Developing
+
+## Check for code style issues
+
+```bash
+composer review
+```
+This command will run, in order:
+- Laravel/Pint
+- PHPStan
+- Rector (dry-run)
+- PestPHP
+
+Ensuring that your code is up to standard and tested.
+
 # Contributing
 Feel free to contribute to this project by submitting a pull request.
 
 # Credits
 I'd like to thank all the people who have contributed to the packages used in this project. 
-Especially [Spatie](https://spatie.be) for their great packages, Livewire and Alpinejs for their awesome framework and the Laravel community for their great work.
-And of course [Laravel](https://laravel.com) for their awesome framework.
+Especially [Spatie](https://spatie.be) for their great packages, Livewire and Alpinejs for their awesome framework and the Laravel community for their great work. And of course [Laravel](https://laravel.com) for their awesome framework, and their [Livewire Starter Kit](https://github.com/laravel/livewire-starter-kit), which this kit is based on.
 
 # Donate
 If you like this project, please consider donating to support it.

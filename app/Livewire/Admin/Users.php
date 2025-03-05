@@ -62,6 +62,7 @@ class Users extends Component
     {
         return view('livewire.admin.users', [
             'users' => User::query()
+                ->with('roles')
                 ->when($this->search, function ($query, $search): void {
                     $query->whereAny($this->searchableFields, 'LIKE', "%$search%");
                 })
