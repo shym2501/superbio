@@ -39,7 +39,12 @@ It comes with a basic user management, role management and permissions managemen
 
 
 # Installation
-After cloning the repository, do the following:
+
+```bash
+laravel new my-project --using=mortenebak/tallstarter
+```
+
+You could also just use this repository as a starting point for your own project by clicking use template.
 
 ## 1. Install dependencies
 
