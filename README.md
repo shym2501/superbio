@@ -40,6 +40,7 @@ It comes with a basic user management, role management and permissions managemen
 
 # Installation
 
+![alt text](docs/bash-install.png "Localization View")
 ```bash
 laravel new my-project --using=mortenebak/tallstarter
 ```
