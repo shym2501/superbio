@@ -1,11 +1,14 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/livewire-starter-kit",
+    "name": "mortenebak/tallstarter",
     "type": "project",
-    "description": "The official Laravel starter kit for Livewire.",
+    "description": "An oppinionated Laravel Starter Kit based on the Official Laravel Livewire Starter Kit",
     "keywords": [
         "laravel",
-        "framework"
+        "framework",
+        "starter kit",
+        "tall stack",
+        "livewire"
     ],
     "license": "MIT",
     "require": {

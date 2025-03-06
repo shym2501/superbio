@@ -34,12 +34,6 @@ class AppServiceProvider extends ServiceProvider
         Model::preventAccessingMissingAttributes();
         Model::preventSilentlyDiscardingAttributes();
 
-        // Prohibit destructive commands in production
-        WipeCommand::prohibit($this->app->isProduction());
-        FreshCommand::prohibit($this->app->isProduction());
-        ResetCommand::prohibit($this->app->isProduction());
-        RefreshCommand::prohibit($this->app->isProduction());
-        RollbackCommand::prohibit($this->app->isProduction());
         DB::prohibitDestructiveCommands($this->app->isProduction());
 
         // Set default timezone to Europe/Copenhagen
