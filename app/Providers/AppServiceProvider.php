@@ -3,11 +3,6 @@
 namespace App\Providers;
 
 use Carbon\CarbonImmutable;
-use Illuminate\Database\Console\Migrations\FreshCommand;
-use Illuminate\Database\Console\Migrations\RefreshCommand;
-use Illuminate\Database\Console\Migrations\ResetCommand;
-use Illuminate\Database\Console\Migrations\RollbackCommand;
-use Illuminate\Database\Console\WipeCommand;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;

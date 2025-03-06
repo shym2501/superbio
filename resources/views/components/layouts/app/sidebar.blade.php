@@ -7,7 +7,7 @@
 <flux:sidebar sticky stashable class="border-r border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 lg:dark:bg-zinc-900/50">
     <flux:sidebar.toggle class="lg:hidden" icon="x-mark"/>
 
-    <a href="{{ route('home') }}" wire:navigate class="mr-5 flex items-center space-x-2">
+    <a href="{{ route('home') }}" class="mr-5 flex items-center space-x-2">
         <x-app-logo class="size-8"></x-app-logo>
     </a>
 
@@ -19,27 +19,27 @@
 
     <flux:navlist variant="outline">
         <flux:navlist.group heading="Platform" class="grid">
-            <flux:navlist.item wire:navigate icon="home" :href="route('admin.index')" :current="request()->routeIs('admin.index')">Dashboard</flux:navlist.item>
+            <flux:navlist.item icon="home" :href="route('admin.index')" :current="request()->routeIs('admin.index')">Dashboard</flux:navlist.item>
         </flux:navlist.group>
         {{--        <flux:navlist.group heading="Monetization" class="grid">--}}
-        {{--            <flux:navlist.item wire:navigate icon="arrow-right" :href="route('dashboard')" :current="request()->routeIs('dashboard')">Overview</flux:navlist.item>--}}
-        {{--            <flux:navlist.item wire:navigate icon="arrow-right" :href="route('dashboard')" :current="request()->routeIs('dashboard')">Subscriptions</flux:navlist.item>--}}
-        {{--            <flux:navlist.item wire:navigate icon="arrow-right" :href="route('dashboard')" :current="request()->routeIs('dashboard')">Invoices</flux:navlist.item>--}}
+        {{--            <flux:navlist.item icon="arrow-right" :href="route('dashboard')" :current="request()->routeIs('dashboard')">Overview</flux:navlist.item>--}}
+        {{--            <flux:navlist.item icon="arrow-right" :href="route('dashboard')" :current="request()->routeIs('dashboard')">Subscriptions</flux:navlist.item>--}}
+        {{--            <flux:navlist.item icon="arrow-right" :href="route('dashboard')" :current="request()->routeIs('dashboard')">Invoices</flux:navlist.item>--}}
         {{--        </flux:navlist.group>--}}
         @canany(['view users', 'view roles', 'view permissions'])
             <flux:navlist.group heading="Users" class="grid">
                 @can('view users')
-                    <flux:navlist.item wire:navigate icon="user" :href="route('admin.users.index')" :current="request()->routeIs('admin.users')">
+                    <flux:navlist.item icon="user" :href="route('admin.users.index')" :current="request()->routeIs('admin.users')">
                         {{ __('users.title') }}
                     </flux:navlist.item>
                 @endcan
                 @can('view roles')
-                    <flux:navlist.item wire:navigate icon="shield-user" :href="route('admin.roles.index')" :current="request()->routeIs('admin.roles')">
+                    <flux:navlist.item icon="shield-user" :href="route('admin.roles.index')" :current="request()->routeIs('admin.roles')">
                         {{ __('roles.title') }}
                     </flux:navlist.item>
                 @endcan
                 @can('view permissions')
-                    <flux:navlist.item wire:navigate icon="shield-check" :href="route('admin.permissions.index')" :current="request()->routeIs('admin.permissions')">
+                    <flux:navlist.item icon="shield-check" :href="route('admin.permissions.index')" :current="request()->routeIs('admin.permissions')">
                         {{ __('permissions.title') }}
                     </flux:navlist.item>
                 @endcan
