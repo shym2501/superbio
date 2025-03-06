@@ -3,6 +3,7 @@
 namespace App\Livewire\Admin;
 
 use Illuminate\Contracts\View\View;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Session;
 use Livewire\Attributes\Url;
@@ -12,6 +13,7 @@ use Spatie\Permission\Models\Permission;
 
 class Permissions extends Component
 {
+    use LivewireAlert;
     use WithPagination;
 
     /** @var array<string,string> */
@@ -33,6 +35,11 @@ class Permissions extends Component
         $this->authorize('view permissions');
     }
 
+    public function updatingSearch(): void
+    {
+        $this->resetPage();
+    }
+
     public function deletePermission(string $permissionId): void
     {
 
@@ -41,6 +48,8 @@ class Permissions extends Component
         $permission = Permission::query()->where('id', $permissionId)->firstOrFail();
 
         $permission->delete();
+
+        $this->alert('success', __('permissions.permission_deleted'));
 
         $this->dispatch('permissionDeleted');
     }

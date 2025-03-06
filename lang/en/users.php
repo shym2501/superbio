@@ -18,5 +18,11 @@ return [
     'name' => 'Name',
     'email' => 'Email',
     'roles' => 'Roles',
+    'roles_description' => 'Select the roles the user should have',
     'your_full_name' => 'Your full name',
+    'create_user' => 'Create user',
+    'create_user_description' => 'Create a new user in the application',
+    'edit_user' => 'Edit user',
+    'edit_user_description' => 'Edit the user in the application',
+    'update_user' => 'Update user',
 ];

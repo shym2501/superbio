@@ -4,7 +4,6 @@ namespace App\Livewire\Admin\Users;
 
 use App\Models\User;
 use Illuminate\Contracts\View\View;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Arr;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Attributes\Layout;
@@ -26,6 +25,9 @@ class EditUser extends Component
     #[Validate(['required', 'string', 'email', 'max:255'])]
     public string $email = '';
 
+    #[Validate('required|string|max:2')]
+    public string $locale = 'en';
+
     /** @var array <int,string> */
     public array $userRoles = [];
 
@@ -36,12 +38,13 @@ class EditUser extends Component
         $this->user = $user;
         $this->name = $this->user->name;
         $this->email = $this->user->email;
+        $this->locale = $this->user->locale ?? 'en';
 
         // get user roles
         $this->userRoles = $this->user->roles->pluck('id')->toArray();
     }
 
-    public function updateUser(): RedirectResponse
+    public function updateUser(): void
     {
         $this->authorize('update users');
 
@@ -60,7 +63,7 @@ class EditUser extends Component
 
         $this->flash('success', __('users.user_updated'));
 
-        return redirect()->route('admin.users.index');
+        $this->redirect(route('admin.users.index'), true);
 
     }
 
@@ -69,6 +72,10 @@ class EditUser extends Component
     {
         return view('livewire.admin.users.edit-user', [
             'roles' => Role::all(),
+            'locales' => [
+                'en' => 'English',
+                'da' => 'Danish',
+            ],
         ]);
     }
 }

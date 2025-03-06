@@ -1,10 +1,16 @@
 <section class="w-full">
     <x-page-heading>
-        <x-slot:title>Users</x-slot:title>
-        <x-slot:subtitle>Manage all the users here</x-slot:subtitle>
+        <x-slot:title>
+            {{ __('users.title') }}
+        </x-slot:title>
+        <x-slot:subtitle>
+            {{ __('users.title_description') }}
+        </x-slot:subtitle>
         <x-slot:buttons>
             @can('create users')
-                <flux:button href="{{ route('admin.users.create') }}" variant="primary" icon="plus">Create user</flux:button>
+                <flux:button href="{{ route('admin.users.create') }}" variant="primary" icon="plus">
+                    {{ __('users.create_user') }}
+                </flux:button>
             @endcan
         </x-slot:buttons>
     </x-page-heading>
