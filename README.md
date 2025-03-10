@@ -1,4 +1,4 @@
-# Laravel Livewire Starter Kit
+# Tallstarter - A Laravel Livewire Starter Kit
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mortenebak/laravel-starter-project)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/mortenebak)
@@ -39,7 +39,13 @@ It comes with a basic user management, role management and permissions managemen
 
 
 # Installation
-After cloning the repository, do the following:
+
+![alt text](docs/bash-install.png "Localization View")
+```bash
+laravel new my-project --using=mortenebak/tallstarter
+```
+
+You could also just use this repository as a starting point for your own project by clicking use template.
 
 ## 1. Install dependencies
 

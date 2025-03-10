@@ -18,5 +18,11 @@ return [
     'name' => 'Navn',
     'email' => 'Email',
     'roles' => 'Roller',
+    'roles_description' => 'Vælg de roller, som brugeren skal have',
     'your_full_name' => 'Dit fulde navn',
+    'create_user' => 'Opret bruger',
+    'create_user_description' => 'Opret en ny bruger i applikationen',
+    'edit_user' => 'Rediger bruger',
+    'edit_user_description' => 'Rediger brugeren i applikationen',
+    'update_user' => 'Opdater bruger',
 ];

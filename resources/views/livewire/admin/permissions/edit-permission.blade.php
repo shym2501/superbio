@@ -1,13 +1,17 @@
 <section class="w-full">
     <x-page-heading>
-        <x-slot:title>Edit Permission</x-slot:title>
-        <x-slot:subtitle>Edit the permission</x-slot:subtitle>
+        <x-slot:title>
+            {{ __('permissions.edit_permission') }}
+        </x-slot:title>
+        <x-slot:subtitle>
+            {{ __('permissions.edit_permission_description') }}
+        </x-slot:subtitle>
     </x-page-heading>
 
     <x-form wire:submit="savePermission" class="space-y-6">
-        <flux:input wire:model.live="name" label="Name of the permission" />
+        <flux:input wire:model.live="name" label="{{ __('permissions.name') }}" />
         <flux:button type="submit" icon="save" variant="primary">
-            Save Permission
+            {{ __('permissions.update_permission') }}
         </flux:button>
     </x-form>
 

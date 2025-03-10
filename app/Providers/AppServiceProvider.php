@@ -3,11 +3,6 @@
 namespace App\Providers;
 
 use Carbon\CarbonImmutable;
-use Illuminate\Database\Console\Migrations\FreshCommand;
-use Illuminate\Database\Console\Migrations\RefreshCommand;
-use Illuminate\Database\Console\Migrations\ResetCommand;
-use Illuminate\Database\Console\Migrations\RollbackCommand;
-use Illuminate\Database\Console\WipeCommand;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
@@ -34,12 +29,6 @@ class AppServiceProvider extends ServiceProvider
         Model::preventAccessingMissingAttributes();
         Model::preventSilentlyDiscardingAttributes();
 
-        // Prohibit destructive commands in production
-        WipeCommand::prohibit($this->app->isProduction());
-        FreshCommand::prohibit($this->app->isProduction());
-        ResetCommand::prohibit($this->app->isProduction());
-        RefreshCommand::prohibit($this->app->isProduction());
-        RollbackCommand::prohibit($this->app->isProduction());
         DB::prohibitDestructiveCommands($this->app->isProduction());
 
         // Set default timezone to Europe/Copenhagen
