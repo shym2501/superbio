@@ -47,7 +47,7 @@ It comes with a basic user management, role management and permissions managemen
 laravel new my-project --using=mortenebak/tallstarter
 ```
 
-You could also just use this repository as a starting point for your own project by clicking use template.
+You could also just use this repository as a starting point for your own project by clicking use template. If installing manually, these are the steps to install:
 
 ## 1. Install dependencies
 
