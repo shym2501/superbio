@@ -2,6 +2,8 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mortenebak/laravel-starter-project)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/mortenebak)
+<a href="https://herd.laravel.com/new?starter-kit=mortenebak/tallstarter"><img src="https://img.shields.io/badge/Install%20with%20Herd-f55247?logo=laravel&logoColor=white"></a>
+
 
 Complete **User Management**, **Role Management** and **Permissions Management** with a Dashboard for Admins.
 ![alt text](docs/backend.png "Backend View")
@@ -45,7 +47,7 @@ It comes with a basic user management, role management and permissions managemen
 laravel new my-project --using=mortenebak/tallstarter
 ```
 
-You could also just use this repository as a starting point for your own project by clicking use template.
+You could also just use this repository as a starting point for your own project by clicking use template. If installing manually, these are the steps to install:
 
 ## 1. Install dependencies
 
