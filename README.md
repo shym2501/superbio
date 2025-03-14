@@ -1,6 +1,6 @@
 # Tallstarter - A Laravel Livewire Starter Kit
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-![GitHub last commit](https://img.shields.io/github/last-commit/mortenebak/laravel-starter-project)
+![GitHub last commit](https://img.shields.io/github/last-commit/mortenebak/tallstarter)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/mortenebak)
 <a href="https://herd.laravel.com/new?starter-kit=mortenebak/tallstarter"><img src="https://img.shields.io/badge/Install%20with%20Herd-f55247?logo=laravel&logoColor=white"></a>
 
