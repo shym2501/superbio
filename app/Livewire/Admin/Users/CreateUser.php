@@ -4,6 +4,7 @@ namespace App\Livewire\Admin\Users;
 
 use App\Models\User;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -47,7 +48,11 @@ class CreateUser extends Component
 
         if ($this->selectedRoles !== []) {
             /** @var $user User */
-            $user->syncRoles($this->selectedRoles);
+            // Convert the userRoles to integers
+            $userRoles = Arr::map($this->selectedRoles, fn ($role): int => (int) $role);
+
+            // Sync the user roles
+            $user->syncRoles($userRoles);
         }
 
         $this->flash('success', __('users.user_created'));

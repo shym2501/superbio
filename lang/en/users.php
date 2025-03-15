@@ -25,4 +25,5 @@ return [
     'edit_user' => 'Edit user',
     'edit_user_description' => 'Edit the user in the application',
     'update_user' => 'Update user',
+    'user_created' => 'User created',
 ];
