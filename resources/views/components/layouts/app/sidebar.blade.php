@@ -29,17 +29,17 @@
         @canany(['view users', 'view roles', 'view permissions'])
             <flux:navlist.group heading="Users" class="grid">
                 @can('view users')
-                    <flux:navlist.item icon="user" :href="route('admin.users.index')" :current="request()->routeIs('admin.users')">
+                    <flux:navlist.item icon="user" :href="route('admin.users.index')" :current="request()->routeIs('admin.users.*')">
                         {{ __('users.title') }}
                     </flux:navlist.item>
                 @endcan
                 @can('view roles')
-                    <flux:navlist.item icon="shield-user" :href="route('admin.roles.index')" :current="request()->routeIs('admin.roles')">
+                    <flux:navlist.item icon="shield-user" :href="route('admin.roles.index')" :current="request()->routeIs('admin.roles.*')">
                         {{ __('roles.title') }}
                     </flux:navlist.item>
                 @endcan
                 @can('view permissions')
-                    <flux:navlist.item icon="shield-check" :href="route('admin.permissions.index')" :current="request()->routeIs('admin.permissions')">
+                    <flux:navlist.item icon="shield-check" :href="route('admin.permissions.index')" :current="request()->routeIs('admin.permissions.*')">
                         {{ __('permissions.title') }}
                     </flux:navlist.item>
                 @endcan
