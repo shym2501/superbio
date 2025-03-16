@@ -124,6 +124,12 @@ Feel free to contribute to this project by submitting a pull request.
 I'd like to thank all the people who have contributed to the packages used in this project.
 Especially [Spatie](https://spatie.be) for their great packages, Livewire and Alpinejs for their awesome framework and the Laravel community for their great work. And of course [Laravel](https://laravel.com) for their awesome framework, and their [Livewire Starter Kit](https://github.com/laravel/livewire-starter-kit), which this kit is based on.
 
+### Contributers
+Take a look at the [contributors](https://github.com/mortenebak/tallstarter/graphs/contributors) who have helped make this project better. Many thanks!
+
 # Donate
 
-If you like this project, please consider donating to support it.
+If you like this project, please consider [donating to support it](https://github.com/sponsors/mortenebak).
+
+Thanks to:
+- [Grazulex](https://github.com/Grazulex)
