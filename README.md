@@ -6,13 +6,13 @@
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/mortenebak)
 <a href="https://herd.laravel.com/new?starter-kit=mortenebak/tallstarter"><img src="https://img.shields.io/badge/Install%20with%20Herd-f55247?logo=laravel&logoColor=white"></a>
 
-> This Starter kit contains my starting point when developing a new Laravel project. Its based on the official Livewire Starter kit, and includes the following features:
-> - ✅ **User Management**, 
-> - ✅ **Role Management**,
-> - ✅ **Permissions Management**,
-> - ✅ **Localization** options
-> - ✅ Separate **Dashboard for Super Admins**
-> - ✅ Updated for Laravel 12.0 **and** Livewire 3.0
+This Starter kit contains my starting point when developing a new Laravel project. Its based on the official Livewire Starter kit, and includes the following features:
+- ✅ **User Management**, 
+- ✅ **Role Management**,
+- ✅ **Permissions Management**,
+- ✅ **Localization** options
+- ✅ Separate **Dashboard for Super Admins**
+- ✅ Updated for Laravel 12.0 **and** Livewire 3.0
 
 
 ### Admin dashboard view:
