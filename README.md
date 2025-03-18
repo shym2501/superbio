@@ -40,9 +40,9 @@ Among other things, it also includes:
 -   [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) for debugging
 -   [Laravel IDE helper](https://github.com/barryvdh/laravel-ide-helper) for IDE support
 
-### Upcoming features
-
--   [Wire Elements / Modals](https://github.com/wire-elements/modal) for modals (still deciding)
+## Upcoming features
+I'm considering adding the following features, depending on my clients' most common requirements:
+-   [Wire Elements / Modals](https://github.com/wire-elements/modal) for modals (still deciding - for now I'm using Flux UI for this)
 -   [Laravel Cashier](https://laravel.com/docs/10.x/billing) for Stripe integration
 
 # Installation
