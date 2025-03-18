@@ -1,19 +1,25 @@
 # Tallstarter - A Laravel Livewire Starter Kit
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mortenebak/tallstarter.svg?style=flat-square)](https://packagist.org/packages/mortenebak/tallstarter)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mortenebak/tallstarter)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/mortenebak)
 <a href="https://herd.laravel.com/new?starter-kit=mortenebak/tallstarter"><img src="https://img.shields.io/badge/Install%20with%20Herd-f55247?logo=laravel&logoColor=white"></a>
 
-Complete **User Management**, **Role Management** and **Permissions Management** with a Dashboard for Admins.
+> This Starter kit contains my starting point when developing a new Laravel project. Its based on the official Livewire Starter kit, and includes the following features:
+> - ✅ **User Management**, 
+> - ✅ **Role Management**,
+> - ✅ **Permissions Management**,
+> - ✅ **Localization** options
+> - ✅ Separate **Dashboard for Super Admins**
+> - ✅ Updated for Laravel 12.0 **and** Livewire 3.0
+
+
+### Admin dashboard view:
 ![alt text](docs/backend.png "Backend View")
-Supporting multiple languages.
+### Supporting multiple languages:
 ![alt text](docs/locale.png "Localization View")
 
-> Updated for Laravel 12.0 **and** Livewire 3.0
-
-This repository contains my starting point when developing a new Laravel project.
-It comes with a basic user management, role management and permissions management and a dashboard.
 
 ## TALL stack
 
