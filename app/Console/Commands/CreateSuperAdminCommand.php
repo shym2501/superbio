@@ -27,6 +27,7 @@ class CreateSuperAdminCommand extends Command
      */
     public function handle(): int
     {
+        $this->line('Create the first super admin user for your new application');
         // ask for the user's name
         $name = $this->ask('What is the users name?');
 
@@ -53,7 +54,7 @@ class CreateSuperAdminCommand extends Command
         }
 
         // output the user
-        $this->info('User created successfully');
+        $this->info('User created successfully. Now go and build something amazing!');
 
         return CommandAlias::SUCCESS;
     }

@@ -22,15 +22,15 @@ This Starter kit contains my starting point when developing a new Laravel projec
 
 
 ## TALL stack
-
+It uses the TALL stack, which stands for:
 -   [Tailwind CSS](https://tailwindcss.com)
 -   [Alpine.js](https://alpinejs.dev)
 -   [Laravel](https://laravel.com)
 -   [Laravel Livewire](https://livewire.laravel.com) using the components.
--   [Flux UI](https://fluxui.dev) for flexible UI components
 
 ## Further it includes:
-
+Among other things, it also includes:
+-   [Flux UI](https://fluxui.dev) for flexible UI components (free version)
 -   [Laravel Pint](https://github.com/laravel/pint) for code style fixes
 -   [PestPHP](https://pestphp.com) for testing
 -   [missing-livewire-assertions](https://github.com/christophrumpel/missing-livewire-assertions) for extra testing of Livewire components by [Christoph Rumpel](https://github.com/christophrumpel)
@@ -47,7 +47,7 @@ This Starter kit contains my starting point when developing a new Laravel projec
 
 # Installation
 
-![alt text](docs/bash-install.png "Localization View")
+![alt text](docs/bash-install.png "Installation using the CLI")
 
 ```bash
 laravel new my-project --using=mortenebak/tallstarter
