@@ -43,7 +43,7 @@ class Password extends Component
         $this->dispatch('password-updated');
     }
 
-    #[Layout('components.layouts.app.frontend')]
+    #[Layout('components.layouts.app')]
     public function render(): View
     {
         return view('livewire.settings.password');
