@@ -74,7 +74,7 @@ class Profile extends Component
         Session::flash('status', 'verification-link-sent');
     }
 
-    #[Layout('components.layouts.app.frontend')]
+    #[Layout('components.layouts.app')]
     public function render(): View
     {
         return view('livewire.settings.profile');

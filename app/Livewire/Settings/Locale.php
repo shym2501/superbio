@@ -28,7 +28,7 @@ class Locale extends Component
         $this->dispatch('locale-updated', name: auth()->user()->name);
     }
 
-    #[Layout('components.layouts.app.frontend')]
+    #[Layout('components.layouts.app')]
     public function render(): View
     {
         return view('livewire.settings.locale', [
