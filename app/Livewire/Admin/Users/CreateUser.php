@@ -47,7 +47,7 @@ class CreateUser extends Component
         ]);
 
         if ($this->selectedRoles !== []) {
-            /** @var $user User */
+            /** @var User $user */
             // Convert the userRoles to integers
             $userRoles = Arr::map($this->selectedRoles, fn ($role): int => (int) $role);
 
